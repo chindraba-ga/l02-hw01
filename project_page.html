@@ -9,30 +9,36 @@
   <title>Lesson 2: Assignment: Make a GA Press Release</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-    @media only print {
-      .screen-only {
-        display: none;
-        visibility: hidden;
-      }
-      body {
-        width: 7in;
-        margin: 0;
-        font-size: 12pt;
-        font-family: 'Times New Roman', Times, serif;
-      }
-      header {
-        font-size: 20pt;
-      }
-      #release-date::before {
-        content: "\2014\20";
-      }
-      #more-info-lead {
-        font-size: 12pt;
-      }
-      a, a:active, a:visited {
-        text-decoration: none;
-        color: black;
-      }
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: black;
+      background-color: whitesmoke;
+    }
+    main {
+      font-size: 1.25em;
+    }
+    .alt-font {
+      font-family: 'Oswald', sans-serif;
+    }
+    .header-image-container {
+      width: 97.25vw;
+      padding-top: 75.45%;
+      position: relative;
+    }
+    .header-image-box {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+    }
+    .header-image-box img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    #location-list {
+      font-size: 0.8em;
     }
     @media only screen {
       .print-only {
@@ -53,25 +59,49 @@
         text-shadow: 0 0 3px rgb(17, 139, 134), 0 0 5px rgb(102, 51, 153);
       }
     }
-    body {
-      font-family: 'Roboto', sans-serif;
-      color: black;
-      background-color: whitesmoke;
-    }
-    main {
-      font-size: 1.25em;
-    }
-    .alt-font {
-      font-family: 'Oswald', sans-serif;
-    }
-    #location-list {
-      font-size: 0.8em;
+    @media only print {
+      .screen-only {
+        display: none;
+        visibility: hidden;
+      }
+      body {
+        width: 7in;
+        margin: 0;
+        font-size: 12pt;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      header {
+        font-size: 20pt;
+      }
+      #release-date::before {
+        content: "\2014\20";
+      }
+      .header-image-container {
+        width: 100%;
+        padding-top: 50.21%;
+      }
+      .header-image-box img {
+        filter: grayscale(1);
+      }
+      #more-info-lead {
+        font-size: 12pt;
+      }
+      a, a:active, a:visited {
+        text-decoration: none;
+        color: black;
+      }
     }
   </style>
 </head>
 <body>
   <header>
     <div id="title-line"><span class="reverse-box alt-font">General Assembly</span> offers Classes and Workshops Worldwide</div>
+    <div class="header-image-container">
+      <div class="header-image-box">
+        <img class="print-only" src="https://ga-shop.s3.amazonaws.com/production/store/locationmasthead/19/image/retina-9ad10b8c7a7bb714b360c151c886247d.jpg" alt="campus lobby">
+        <img class="screen-only" src="https://generalassemb.ly/sites/default/files/2018-05/SocialImpact_TwoColumn_WHOWEARE.jpg" alt="Image of an academic advisor session">
+      </div>
+    </div>
     <div id="release-date" class="attention">For Immediate Release</div>
   </header>
   <hr>

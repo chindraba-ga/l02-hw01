@@ -47,6 +47,15 @@
     #location-list {
       font-size: 0.8em;
     }
+    .city-list {
+      padding: 0;
+      width: 100%;
+      list-style-type: none;
+    }
+    .city-name {
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+    }
     @media only screen {
       .print-only {
         display: none;
@@ -99,15 +108,38 @@
         padding: 5%;
         z-index: 10;
       }
-      a:hover > img {
-        animation:wobble 1s linear infinite;
-      }
       @keyframes wobble{
         0% {transform:rotate(0deg)}
         25% {transform:rotate(30deg)}	
         50% {transform:rotate(0deg)}
         75% {transform:rotate(-30deg)}	
         100% {transform:rotate(0deg)}
+      }
+      a:hover > img {
+        animation:wobble 1s linear infinite;
+      }
+      .city-list {
+        text-align: center;
+      }
+      .city-list li {
+        display: inline-block;
+      }
+      .city-name {
+        border-radius: .65em;
+        color: whitesmoke;
+        background-color: rgb(226, 28, 35);
+        padding: .05em .25em;
+        margin: .25em;
+        line-height: 2.7;
+        text-shadow: 0 0 3px rgb(17, 139, 134), 0 0 5px rgb(102, 51, 153);
+        font-weight: bold;
+      }
+      .city-name:hover {
+        background-color: rgb(17, 139, 134);
+        border-radius: 4em;
+        font-family: 'Roboto', sans-serif;
+        text-shadow: 0 0 3px rgb(226, 28, 35), 0 0 5px rgb(102, 51, 153);
+        transition: all .6s ease;
       }
     }
     @media only print {
@@ -141,6 +173,16 @@
         text-decoration: none;
         color: black;
       }
+      .city-list {
+        column-count: 3;
+        font-size: 12pt;
+      }
+      .city-name {
+        border-radius: 4em;
+        border: 1px solid black;
+        padding: .6pt 3pt;
+        margin-bottom: 1.7pt;
+      }
     }
   </style>
 </head>
@@ -166,7 +208,7 @@
       <span class="reverse-box alt-font">General Assembly,<sup><img src="https://res.cloudinary.com/dr5iclm3d/image/upload/v1548206606/logo.png" alt="General Assembly Logo"></sup></span> which started in New York as a startup incubator, now offers classes and workshops in technology, design, and entrepreneurship, with campuses around the world in:
     </div>
     <div id="location-list">
-      <ul id="city-list">
+      <ul class="city-list">
         <li class="city-name">Atlanta</li>
         <li class="city-name">Austin</li>
         <li class="city-name">Boston</li>

@@ -1,5 +1,5 @@
 l02-hw01
-* Status: Assigned
+* Status: Submitted
 * Live page: <https://www.chindraba.work/fewd/l02-hw01.html>
 
 Contents

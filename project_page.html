@@ -14,9 +14,6 @@
       color: black;
       background-color: whitesmoke;
     }
-    main {
-      font-size: 1.25em;
-    }
     .alt-font {
       font-family: 'Oswald', sans-serif;
     }
@@ -47,12 +44,16 @@
     #location-list {
       font-size: 0.8em;
     }
+    .city-lead {
+      text-align: center;
+      font-size: 1.5em; 
+    }
     .city-list {
       padding: 0;
       width: 100%;
       list-style-type: none;
     }
-    .city-name {
+    .city-link {
       font-family: 'Roboto', sans-serif;
       text-align: center;
     }
@@ -102,6 +103,9 @@
         background-color: rgb(226,28,65);
         text-shadow: 0 0 3px rgb(17, 139, 134), 0 0 5px rgb(102, 51, 153);
       }
+      main {
+        font-size: 1.25em;
+      }
       #logo-img {
         width: 15%;
         max-width: 64px;
@@ -124,17 +128,19 @@
       .city-list li {
         display: inline-block;
       }
-      .city-name {
+      .city-link {
+        display: inline-block;
         border-radius: .65em;
         color: whitesmoke;
         background-color: rgb(226, 28, 35);
+        text-decoration: none;
         padding: .05em .25em;
         margin: .25em;
         line-height: 2.7;
         text-shadow: 0 0 3px rgb(17, 139, 134), 0 0 5px rgb(102, 51, 153);
         font-weight: bold;
       }
-      .city-name:hover {
+      .city-link:hover {
         background-color: rgb(17, 139, 134);
         border-radius: 4em;
         font-family: 'Roboto', sans-serif;
@@ -174,14 +180,19 @@
         color: black;
       }
       .city-list {
-        column-count: 3;
-        font-size: 12pt;
+        font-size: 10pt;
       }
-      .city-name {
+      .tri-column {
+        column-count: 3;
+      }
+      .city-list li {
+        margin-bottom: 3.7pt;
+      }
+      .city-link {
         border-radius: 4em;
         border: 1px solid black;
-        padding: .6pt 3pt;
-        margin-bottom: 1.7pt;
+        padding: .6pt 4pt;
+        margin-bottom: 2.7pt;
       }
     }
   </style>
@@ -208,22 +219,48 @@
       <span class="reverse-box alt-font">General Assembly,<sup><img src="https://res.cloudinary.com/dr5iclm3d/image/upload/v1548206606/logo.png" alt="General Assembly Logo"></sup></span> which started in New York as a startup incubator, now offers classes and workshops in technology, design, and entrepreneurship, with campuses around the world in:
     </div>
     <div id="location-list">
-      <ul class="city-list">
-        <li class="city-name">Atlanta</li>
-        <li class="city-name">Austin</li>
-        <li class="city-name">Boston</li>
-        <li class="city-name">Chicago</li>
-        <li class="city-name">Hong&nbsp;Kong</li>
-        <li class="city-name">London</li>
-        <li class="city-name">Los&nbsp;Angeles</li>
-        <li class="city-name">Melbourne</li>
-        <li class="city-name">New&nbsp;York&nbsp;City</li>
-        <li class="city-name">San&nbsp;Francisco</li>
-        <li class="city-name">Seattle</li>
-        <li class="city-name">Singapore</li>
-        <li class="city-name">Sydney</li>
-        <li class="city-name">Washington&nbsp;D.C.</li>
-      </ul>
+        <div id="usa-cities" class="city-lead">North American Campuses</div>
+          <ul class="city-list tri-column">
+            <li><a class="city-link"href="https://generalassemb.ly/locations/atlanta">Atlanta</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/austin">Austin</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/boston">Boston</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/charlotte">Charlotte</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/chicago">Chicago</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/dallas">Dallas</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/denver">Denver</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/detroit">Detroit</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/houston">Houston</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/los-angeles">Los&nbsp;Angeles</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/louisville">Louisville</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/miami">Miami</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/minneapolis">Minneapolis</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/nashville">Nashville</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/new-york-city">New&nbsp;York&nbsp;City</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/orlando">Orlando</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/phoenix">Phoenix</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/raleigh">Raleigh</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/salt-lake-city">Salt&nbsp;Lake&nbsp;City</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/san-diego">San &nbsp;Diego</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/san-francisco">San &nbsp;Francisco</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/seattle">Seattle</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/st-louis">St.&nbsp;Louis</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/tampa">Tampa</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/toronto">Toronto</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/washington-dc">Washington&nbsp;D.C.</a></li>
+          </ul>
+        <div id="world-cities" class="city-lead">International Campuses</div>
+          <ul class="city-list tri-column">
+            <li><a class="city-link"href="https://generalassemb.ly/locations/adelaide">Adelaide</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/brisbane">Brisbane</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/edinburgh">Edinburgh</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/london">London</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/manchester">Manchester</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/melbourne">Melbourne</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/paris">Paris</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/singapore">Singapore</a></li>
+            <li><a class="city-link"href="https://generalassemb.ly/locations/sydney">Sydney</a></li>
+          </ul>
+      </div>
     </div>
     <div id="more-info-lead">
       For more information, visit General Assembly's<sup class="print-only"><img src="https://res.cloudinary.com/dr5iclm3d/image/upload/v1548206606/logo.png" alt="General Assembly Logo"></sup> <a href="https://generalassemb.ly" target="_blank" aria-label="Learn more about General Assembly." title="General Assembly's website">website<img id="ga-spinner" class="screen-only" src="https://res.cloudinary.com/dr5iclm3d/image/upload/v1548206606/logo.png" alt="General Assembly Logo"></a><span class="print-only"> &lt;https://GeneralAssemb.ly&gt;</span>.

@@ -25,7 +25,7 @@
       width: 1.1rem;
     }
     .header-image-container {
-      width: 97.25vw;
+      width: 97.1vw;
       padding-top: 75.45%;
       position: relative;
     }
@@ -60,6 +60,33 @@
         padding-right: 0.4em;
         color: whitesmoke;
         background-color: black;
+      }
+      @keyframes fade {
+        0%   { opacity: 0; }
+        4%   { opacity: 1; }
+        20%  { opacity: 1; }
+        24%  { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .slide { 
+        opacity: 0;
+        z-index: -2;
+        animation: fade 25s infinite; 
+      }
+      .slideshow img:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .slideshow img:nth-child(2) {
+        animation-delay: 5s;
+      }
+      .slideshow img:nth-child(3) {
+        animation-delay: 10s;
+      }
+      .slideshow img:nth-child(4) {
+        animation-delay: 15s;
+      }
+      .slideshow img:nth-child(5) {
+        animation-delay: 20s;
       }
       .attention {
         color: whitesmoke;
@@ -120,9 +147,13 @@
   <header>
     <div id="title-line"><span class="reverse-box alt-font">General Assembly<sup><img src="https://res.cloudinary.com/dr5iclm3d/image/upload/v1548206606/logo.png" alt="General Assembly Logo"></sup></span> offers Classes and Workshops Worldwide</div>
     <div class="header-image-container">
-      <div class="header-image-box">
+      <div class="header-image-box slideshow">
+        <img class="slide screen-only" src="https://generalassemb.ly/sites/default/files/2018-05/SocialImpact_TwoColumn_WHOWEARE.jpg" alt="Image of an academic advisor session">
+        <img class="slide screen-only" src="https://ga-shop-production-herokuapp-com.global.ssl.fastly.net/assets/images/section-tech-img_3f83b.jpg" alt="Image of a woman in class">
+        <img class="slide screen-only" src="https://generalassemb.ly/sites/default/files/2018-05/SocialImpact_TwoColumn_NonProfitPartners.jpg" alt="Image of an award presentation">
+        <img class="slide screen-only" src="https://generalassemb.ly/sites/default/files/2018-05/SocialImpact_TwoColumn_OURMISSION%20%2806cdc840-4c76-41cc-bafc-1557f1ce0985%29.jpg" alt="Image of a graduation ceremony">
+        <img class="slide screen-only" src="https://generalassemb.ly/sites/default/files/2018-05/SocialImpact_TwoColumn_OurSponsorPartnerships.jpg" alt="Staff member group photo">
         <img class="print-only" src="https://ga-shop.s3.amazonaws.com/production/store/locationmasthead/19/image/retina-9ad10b8c7a7bb714b360c151c886247d.jpg" alt="campus lobby">
-        <img class="screen-only" src="https://generalassemb.ly/sites/default/files/2018-05/SocialImpact_TwoColumn_WHOWEARE.jpg" alt="Image of an academic advisor session">
         <img id="logo-img" class="screen-only" src="https://res.cloudinary.com/dr5iclm3d/image/upload/v1548206606/logo.png" alt="General Assembly Logo">
       </div>
     </div>

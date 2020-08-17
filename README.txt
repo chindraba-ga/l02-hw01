@@ -1,5 +1,6 @@
 l02-hw01
 * Status: Submitted
+* CodePen: <https://codepen.io/chindraba-ga/pen/GRZgmYV>
 * Live page: <https://www.chindraba.work/fewd/l02-hw01.html>
 
 Contents

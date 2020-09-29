@@ -1,7 +1,7 @@
 l02-hw01
 * Status: Final
 * CodePen: <https://codepen.io/chindraba-ga/pen/GRZgmYV>
-* Live page: <https://www.chindraba.work/fewd/l02-hw01.html>
+* Live page: <https://fewd.chindraba.work/lessons/l02-hw01/project_page.html>
 
 Contents
 ================================================================================
